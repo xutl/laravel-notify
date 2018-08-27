@@ -1,6 +1,6 @@
 <?php
 
-namespace XuTL\Flash;
+namespace XuTL\Notify;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,10 +18,10 @@ class FlashNotifyServerProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/../views', 'flash');
+        $this->loadViewsFrom(__DIR__ . '/../views', 'notify');
 
         $this->publishes([
-            __DIR__ . '/../views' => base_path('resources/views/vendor/flash'),
+            __DIR__ . '/../views' => base_path('resources/views/vendor/notify'),
         ], 'views');
     }
 

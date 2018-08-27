@@ -32,9 +32,9 @@
     }
 </style>
 
-@if(Session::has('flash.message'))
-    <div class="flash flash-{{ Session::get('flash.type') }}">
-        <span class="flash__body">{{Session::get('flash.message')}}</span>
+@if(Session::has('notifiy.message'))
+    <div class="flash flash-{{ Session::get('notifiy.type') }}">
+        <span class="flash__body">{{Session::get('notifiy.message')}}</span>
     </div>
     <script>
         jQuery('.flash').hide().fadeIn(500).delay(3000).animate({

@@ -61,20 +61,20 @@
         cursor: pointer;
     }
 </style>
-@if(Session::has('flash.message'))
+@if(Session::has('notifiy.message'))
     <div class="flash-message" style="z-index: 2109;">
         <div class="flash_message__group">
-            @if(Session::get('flash.type')=='success')
+            @if(Session::get('notifiy.type')=='success')
                 <i class="flash-icon flash-icon-success fa fa-check-circle-o"></i>
-            @elseif(Session::get('flash.type')=='warning')
+            @elseif(Session::get('notifiy.type')=='warning')
                 <i class="flash-icon flash-icon-warning fa fa-exclamation-circle"></i>
-            @elseif(Session::get('flash.type')=='error')
+            @elseif(Session::get('notifiy.type')=='error')
                 <i class="flash-icon flash-icon-error fa fa-times-circle"></i>
-            @elseif(Session::get('flash.type')=='info')
+            @elseif(Session::get('notifiy.type')=='info')
                 <i class="flash-icon flash-icon-info fa fa-info-circle"></i>
             @endif
 
-            <p>{{Session::get('flash.message')}}</p>
+            <p>{{Session::get('notifiy.message')}}</p>
             <i class="flash-icon-close fa fa-times"></i>
         </div>
 

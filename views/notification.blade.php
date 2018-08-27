@@ -68,21 +68,21 @@
     }
 </style>
 
-@if(Session::has('flash.message'))
+@if(Session::has('notifiy.message'))
     <div class="flash-notification" style="top: 16px; z-index: 2015;">
-        @if(Session::get('flash.type')=='success')
+        @if(Session::get('notifiy.type')=='success')
             <i class="notification-icon fa fa-check-circle flash-icon-success"></i>
-        @elseif(Session::get('flash.type')=='warning')
+        @elseif(Session::get('notifiy.type')=='warning')
             <i class="notification-icon fa fa-exclamation-circle flash-icon-warning"></i>
-        @elseif(Session::get('flash.type')=='error')
+        @elseif(Session::get('notifiy.type')=='error')
             <i class="notification-icon  fa fa-times-circle flash-icon-error"></i>
-        @elseif(Session::get('flash.type')=='info')
+        @elseif(Session::get('notifiy.type')=='info')
             <i class="notification-icon fa fa-info-circle flash-icon-info"></i>
         @endif
 
         <div class="notification__group is-with-icon">
-            <h2 class="notification__title">{{Session::get('flash.title','Success')}}</h2>
-            <div class="notification__content">{{Session::get('flash.message')}}</div>
+            <h2 class="notification__title">{{Session::get('notifiy.title','Success')}}</h2>
+            <div class="notification__content">{{Session::get('notifiy.message')}}</div>
             <i class="notification__closeBtn fa fa-times"></i>
         </div>
     </div>

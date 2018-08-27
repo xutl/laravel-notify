@@ -1,5 +1,5 @@
 <?php
-namespace XuTL\Flash;
+namespace XuTL\Notify;
 
 use Illuminate\Support\Facades\Facade;
 

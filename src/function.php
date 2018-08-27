@@ -1,21 +1,13 @@
 <?php
 
 
-if (!function_exists('flash')) {
+if (!function_exists('notify')) {
 
     /**
-     * @param string $message
-     * @return \XuTL\Flash\FlashNotify
+     * @return \XuTL\Notify\FlashNotify
      */
-    function flash($message = '')
+    function notify($message = '')
     {
-        /**
-         * @var \XuTL\Flash\FlashNotify $notify
-         */
-        $notify = app('flashNotify');
-        if (!is_null($message)) {
-            return $notify->success($message); //默认为success
-        }
-        return $notify;
+        return app('flashNotify');
     }
 }
