@@ -1,0 +1,45 @@
+{
+  "name": "xutl/laravel-notify",
+  "description": "This is a Laravel flash notify message.",
+  "keywords": [
+    "flash",
+    "laravel",
+    "notify",
+    "message"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "laravel/framework": "5.6.* | 5.5.* | 5.4.* | 5.3.* | 5.2.* | 5.1.* | 5.0.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "XuTL\\Notify\\": "src"
+    },
+    "files": [
+      "src/function.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "XuTL\\Flash\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "XuTL\\Notify\\FlashNotifyServerProvider"
+      ],
+      "aliases": {
+        "Flash": "XuTL\\Notify\\Notify"
+      }
+    }
+  },
+  "prefer-stable": true
+}
