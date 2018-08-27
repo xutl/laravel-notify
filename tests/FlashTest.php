@@ -1,9 +1,9 @@
 <?php
-namespace XuTL\Flash\Tests;
+namespace XuTL\Notify\Tests;
 
 use Illuminate\Session\Store;
 use PHPUnit\Framework\TestCase;
-use XuTL\Flash\FlashNotify;
+use XuTL\Notify\FlashNotify;
 
 class FlashTest extends TestCase
 {

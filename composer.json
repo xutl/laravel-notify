@@ -25,7 +25,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "XuTL\\Flash\\Tests\\": "tests/"
+      "XuTL\\Notify\\Tests\\": "tests/"
     }
   },
   "extra": {
