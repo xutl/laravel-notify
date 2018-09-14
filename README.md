@@ -2,6 +2,10 @@
 
 A simple package for flashing messages to views in Laravel 5+.
 
+[![License](https://poser.pugx.org/xutl/laravel-notify/license.svg)](https://packagist.org/packages/xutl/laravel-notify)
+[![Latest Stable Version](https://poser.pugx.org/xutl/laravel-notify/v/stable.png)](https://packagist.org/packages/xutl/laravel-notify)
+[![Total Downloads](https://poser.pugx.org/xutl/laravel-notify/downloads.png)](https://packagist.org/packages/xutl/laravel-notify)
+
 ## Installation
 
 First, require the package using composer like so:
